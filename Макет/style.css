@@ -1,0 +1,479 @@
+@font-face {
+    font-family: TitilliumWeb-Regular;
+    src: url(fonts/TitilliumWeb-Regular.ttf) format("truetype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: TitilliumWeb-Bold;
+    src: url(fonts/TitilliumWeb-Bold.ttf) format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: TitilliumWeb-SemiBold;
+    src: url(fonts/TitilliumWeb-SemiBold.ttf) format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: TitilliumWeb-Italic;
+    src: url(fonts/TitilliumWeb-Italic.ttf) format("truetype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: TitilliumWeb-Light;
+    src: url(fonts/TitilliumWeb-Light.ttf) format("truetype");
+    font-weight: 300;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Our */
+.section-title {
+    font-family: TitilliumWeb-Bold;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.subtitle {
+    font-family: TitilliumWeb-Regular;
+    font-style: normal;
+    font-size: 18px;
+}
+
+hr {
+    width: 87px;
+    height: 4px;
+    background-color: #000000;
+    opacity: 0.15;
+    margin: 0 auto;
+    margin-top: 21px;
+    margin-bottom: 23px;
+}
+
+/*Header*/
+/* nav,
+header {} */
+
+.header {
+    background-image: url(icons/Bg.png);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* min-height: 567px;
+
+    height: 567px; */
+    padding-top: 40px;
+}
+
+.header h1 {
+    margin-top: 145px;
+}
+
+
+/* .header_text {
+    height: 476px;
+} */
+
+.btn-menu {
+    background-color: #87509C;
+    color: white;
+    font-size: 16px;
+    font-family: TitilliumWeb-Regular;
+    font-style: normal;
+}
+
+.btn-menu:hover {
+    background-color: #643A79;
+    color: white;
+}
+
+.header_text h1 {
+    font-family: TitilliumWeb-Bold;
+    font-weight: bold;
+    font-size: 42.16px;
+}
+
+.button {
+    font-family: TitilliumWeb-SemiBold;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    max-height: 70px;
+    max-width: 293px;
+    height: 70px;
+
+    /*width: 44.5vh;
+    height: 10vh; */
+}
+
+.Centered {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.Centerer {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.btn-work {
+    background-color: #EB7D4B;
+    margin-top: 54px;
+    margin-bottom: 145px;
+}
+
+/*Services*/
+.services {
+    background-color: #17C2A4;
+    color: white;
+    padding-top: 119px;
+}
+
+.services .card {
+    padding: 0;
+
+
+}
+
+.services_icon {
+    margin-top: 78px;
+    margin-bottom: 128px;
+}
+
+.services .card-body {
+    background-color: #17C2A4;
+}
+
+/*Team*/
+.team {
+    background-color: #E7F1F8;
+    color: #3C4761;
+    font-family: TitilliumWeb-Regular;
+    padding-top: 119px;
+    padding-bottom: 127px;
+}
+
+.text-info {
+    color: #30bae7;
+
+}
+
+.team h5 {
+    font-family: TitilliumWeb-Bold;
+    font-weight: bold;
+}
+
+/*Skills*/
+.skills {
+    background-color: #FFFFFF;
+    color: #3C4761;
+    font-family: TitilliumWeb-Bold;
+    font-size: 18px;
+    padding-top: 117px;
+}
+
+.circle {
+    margin-top: 84px;
+}
+
+.circle p {
+    margin-top: 32px;
+    margin-bottom: 112px;
+}
+
+.progress {
+    max-width: 160px;
+    max-height: 160px;
+    width: 160px;
+    height: 160px;
+    line-height: 160px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+
+.progress:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 12px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.progress .progress-left {
+    left: 0;
+}
+
+.progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 12px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+
+.progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+
+.progress .progress-right {
+    right: 0;
+}
+
+.progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+
+.progress .progress-value {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: white;
+    font-size: 24px;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.progress.blue .progress-bar {
+    border-color: #30bae7;
+}
+
+.progress.blue .progress-left .progress-bar {
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+
+.progress.pink .progress-bar {
+    border-color: #d74680;
+}
+
+.progress.pink .progress-left .progress-bar {
+    animation: loading-3 1s linear forwards 1.8s;
+}
+
+.progress.green .progress-bar {
+    border-color: #15c7a8;
+}
+
+.progress.green .progress-left .progress-bar {
+    animation: loading-4 0.4s linear forwards 1.8s;
+}
+
+.progress.yellow .progress-bar {
+    border-color: #eb7d4b
+}
+
+.progress.yellow .progress-left .progress-bar {
+    animation: loading-5 1.2s linear forwards 1.8s;
+}
+
+
+
+@keyframes loading-1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes loading-2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
+}
+
+@keyframes loading-3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes loading-4 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(38deg);
+        transform: rotate(38deg);
+    }
+}
+
+@keyframes loading-5 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(126deg);
+        transform: rotate(126deg);
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .progress {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+/*Portfolio*/
+.portfolio {
+    background-color: #FFDD99;
+    color: #393939;
+    padding-top: 120px;
+    /* padding-bottom: 109px; */
+}
+
+.portfolio .btn {
+    margin: 0 5px;
+    margin-bottom: 62px;
+}
+
+.portfolio_btn {
+    background-color: #ebcb8d;
+}
+
+.portfolio .btn:hover {
+    transition: .5s;
+    background-color: white;
+}
+
+.work {
+    margin: 0px 10px 64px 10px;
+}
+
+.work p {
+    margin-top: 32px;
+    font-family: TitilliumWeb-Regular;
+    font-size: 18px;
+}
+
+.btn-load {
+    background-color: #17c2a4;
+}
+
+/*Testimonials*/
+.testimonials {
+    background-color: #D74680;
+    color: #FFFFFF;
+    padding-top: 119px;
+}
+
+.testimonials .subtitle {
+    margin-bottom: 82px;
+}
+
+.testimonials .mugshot {
+    height: 96px;
+    width: 96px;
+    background-color: #787878;
+    border-radius: 50%;
+}
+
+.profiles {
+    font-family: TitilliumWeb-Regular;
+    font-size: 16px;
+    color: #ffdd99;
+}
+
+.media {
+    margin-bottom: 143px;
+}
+
+
+/*get*/
+.get {
+    padding-top: 119px;
+    font-family: TitilliumWeb-Regular;
+    background-color: #3c5499;
+    color: #FFFFFF;
+}
+
+.get .subtitle {
+    margin-bottom: 76px;
+}
+
+.btn-message {
+    background-color: #30bae7;
+    margin-top: 59px;
+    margin-bottom: 115px;
+}
+
+/*Footer*/
+footer {
+    background-color: #344b8e;
+    color: white;
+    padding-top: 48px;
+    padding-bottom: 41px;
+}
+
+footer a {
+    color: white;
+    font-size: 24px;
+    font-family: TitilliumWeb-SemiBold;
+    font-weight: 600;
+
+}
+
+footer a:hover {
+    transition: .3s;
+    color: #30BAE7;
+}
